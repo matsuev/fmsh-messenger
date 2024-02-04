@@ -1,28 +1,35 @@
 # fmsh-messenger
 
-## В папке с проектом не забудьте выполнить команду
+This template should help get you started developing with Vue 3 in Vite.
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
 
 ```sh
 npm install
 ```
 
-## Для самостоятельной работы:
-1. Разбираемся с рендерингом списков:
-   * https://vuejs.org/guide/essentials/list.html
-2. Вычисляемые значения:
-   * https://vuejs.org/guide/essentials/computed.html
-3. Функции фильтрации и сортировки массивов: 
-   * https://learn.javascript.ru/array
-   * https://learn.javascript.ru/array-methods
+### Compile and Hot-Reload for Development
 
-## Задание:
+```sh
+npm run dev
+```
 
-Сделать компонент для вывода списка контактов:
-   * в карточке контакта должны быть:
-      - аватарка
-      - имя, фамилия
-      - username (имя пользователя)
+### Compile and Minify for Production
 
-Список контактов сортируем по алфавиту.
+```sh
+npm run build
+```
 
-В списке должна быть строка поиска по имени/фамилии/username
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```

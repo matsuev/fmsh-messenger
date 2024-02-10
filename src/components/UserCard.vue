@@ -1,26 +1,19 @@
 <template>
    <div>
-      <div class="avatar">{{ avatarLetters }}</div>
-      id: {{ user.id }}, name: {{ user.name }}
+      <h2>User card</h2>
+      <strong>
+         <div>UserName: {{ users.user(userid).name }}</div>
+         <div>Email: {{ users.user(userid).email }}</div>
+      </strong>
+
    </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
-const props = defineProps(['user'])
+import { useUserStore } from '@/stores/users.js';
 
-const avatarLetters = computed(() =>
-   props.user.name.first[0].toUpperCase() + props.user.name.second[0].toUpperCase()
-)
+const users = useUserStore()
 
+
+defineProps(['userid'])
 </script>
-
-<style>
-.avatar {
-   text-align: center;
-   width: 32px;
-   line-height: 32px;
-   border: 1px solid red;
-   border-radius: 50%;
-}
-</style>
